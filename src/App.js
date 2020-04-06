@@ -7,7 +7,7 @@ import Header from './component/header/header.component';
 import HomePage from './component/pages/homepage/homepage.component';
 import ShopPage from './component/pages/shop/shop.component';
 import SignInAndSignUpPage from './component/pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
-import { auth } from './component/firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './component/firebase/firebase.utils';
 
 // const HatsPage = () => (
 //   <div>
@@ -32,11 +32,32 @@ class App extends Component {
     //   this.setState({ currentUser: user });
     //   console.log(user)
     // })
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-        this.setState({ currentUser: user });
-        
-        console.log(user)
-      })
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      // this.unsubscribeFromAuth = auth.onAuthStateChanged(async user => {
+        // this.setState({ currentUser: user });
+        // console.log(user)
+        // createUserProfileDocument(user);
+
+        if (userAuth){
+          const userRef = await createUserProfileDocument(userAuth);
+          
+          userRef.onSnapshot(snapShot => {
+            // console.log(snapShot.data());
+            this.setState({
+              currentUser: {
+                id: snapShot.id,
+                ...snapShot.data()
+              }
+            }
+            , () => {
+              console.log(this.state);
+            }
+            )
+          });
+          
+        }
+        this.setState({ currentUser: userAuth });
+      });
   }
 
   componentWillUpdate() {
