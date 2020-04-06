@@ -1,0 +1,98 @@
+$ git clone git@github.com:neelamchawla/eCommerce.git cloned-repo
+
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git remote add origin git@github.com:neelamchawla/eCommerce.git
+fatal: remote origin already exists.
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ ls
+ node_modules/        package.json        public/     src/
+'npm ecommerce.txt'   package-lock.json   README.md
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git remote
+origin
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git remote remove origin
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git remote
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git remote add origin git@github.com:neelamchawla/eCommerce.git
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ ssh-keygen -t rsa -C "neelamchawla55@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/RAMRAKHIANI/.ssh/id_rsa): key
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in key
+Your public key has been saved in key.pub
+The key fingerprint is:
+SHA256:qxQQl9/vU5iLXSWLvmab2sdaVnLeg/ovyXg0i9p2XkU neelamchawla55@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|    . ..         |
+|     o.          |
+|    .  . .      E|
+|     .  . .   ...|
+|      . S  . +.++|
+|       . .  =o==o|
+|      . .  ==**oo|
+|     . .  o=X@+ .|
+|      .  .+*@Oo. |
++----[SHA256]-----+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push --set-upstream origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+,
+    "predeploy": "npm run build",
+    "deploy": "gh-pages"
+
+
+ git branch -m gh-pages master
+
+==========================================
+
+npm i node-sass
+
+npm i firebase
+
+

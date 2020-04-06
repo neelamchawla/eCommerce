@@ -1,0 +1,19 @@
+.collection-preview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 3.8%;
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    background-color: #f5f5f54d;
+    opacity: 0.7;
+    padding: 2%;
+  }
+
+  .preview {
+    display: flex;
+    justify-content: space-between;
+  }
+}
