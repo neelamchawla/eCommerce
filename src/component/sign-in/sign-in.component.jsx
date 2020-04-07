@@ -4,7 +4,7 @@ import './sign-in.styles.scss'
 
 import FormInput from '../form-input/form-input.component'
 import CustomButton from '../custom-button/custom-button.component.jsx'
-import { signInWithGoogle } from '../firebase/firebase.utils';
+import { auth, signInWithGoogle } from '../firebase/firebase.utils';
 
 class SignIn extends Component {
     constructor(props) {
@@ -16,13 +16,27 @@ class SignIn extends Component {
       }
     }
 
-    handleSubmit = event => {
+    handleSubmit = async event => {
         event.preventDefault();
         
-        this.setState({
-            email: '',
-            password: ''
-        })
+        const { email, password } = this.state;
+
+        try {
+          await auth.signInWithEmailAndPassword(email, password);
+          this.setState({
+                email: '',
+                password: ''
+              });
+        }
+        catch (error) {
+          console.log(error);
+        }
+
+        // before using try n catch
+        // this.setState({
+        //     email: '',
+        //     password: ''
+        // })
     }
 
     handleChange = event => {
@@ -35,7 +49,7 @@ class SignIn extends Component {
     return (
       <div className="sign-in">
       <h1>SIGN IN</h1>
-        <h2>I Already Have An Account</h2>
+        <h2 class="animated tada">I Already Have An Account</h2>
         <span>Sign in with your email and password</span>
 
         <form onSubmit={this.handleSubmit}>
@@ -44,14 +58,14 @@ class SignIn extends Component {
             type="email"
             value={this.state.email}
             handleChange={this.handleChange}
-            label= "Email"
+            label= "Email*"
             required />
             <FormInput
             name="password"
             type="password"
             value={this.state.password}
             handleChange={this.handleChange}
-            label= "Password" 
+            label= "Password*" 
             required />
 
             <div className='buttons'>

@@ -1,6 +1,6 @@
 const SHOP_DATA = [
     {
-      id: 1,
+      cid: 1,
       title: 'Hats',
       routeName: 'hats',
       items: [
@@ -61,7 +61,7 @@ const SHOP_DATA = [
       ]
     },
     {
-      id: 2,
+      cid: 2,
       title: 'Sneakers',
       routeName: 'sneakers',
       items: [
@@ -116,7 +116,7 @@ const SHOP_DATA = [
       ]
     },
     {
-      id: 3,
+      cid: 3,
       title: 'Jackets',
       routeName: 'jackets',
       items: [
@@ -153,7 +153,7 @@ const SHOP_DATA = [
       ]
     },
     {
-      id: 4,
+      cid: 4,
       title: 'Womens',
       routeName: 'womens',
       items: [
@@ -202,7 +202,7 @@ const SHOP_DATA = [
       ]
     },
     {
-      id: 5,
+      cid: 5,
       title: 'Mens',
       routeName: 'mens',
       items: [

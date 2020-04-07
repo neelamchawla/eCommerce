@@ -56,7 +56,7 @@ class SignUp extends Component {
     return (
       <div className="sign-up">
           <h1>SIGN UP</h1>
-          <h2>I Do Not Have An Account</h2>
+          <h2 class="animated tada delay-2s">I Do Not Have An Account</h2>
           <span>Sign up with your email and password</span>
         <form className="sign-up-form" onSubmit={this.handleSubmit}>
         <FormInput 
@@ -64,7 +64,7 @@ class SignUp extends Component {
             name="displayName"
             value={displayName}
             onChange={this.handleChange}
-            label="Display Name"
+            label="Display Name*"
             required
         />
         <FormInput 
@@ -72,7 +72,7 @@ class SignUp extends Component {
             name="email"
             value={email}
             onChange={this.handleChange}
-            label="Email"
+            label="Email*"
             required
         />
         <FormInput 
@@ -80,7 +80,7 @@ class SignUp extends Component {
             name="password"
             value={password}
             onChange={this.handleChange}
-            label="Password"
+            label="Password*"
             required
         />
         <FormInput 
@@ -88,10 +88,13 @@ class SignUp extends Component {
             name="confirmPassword"
             value={confirmPassword}
             onChange={this.handleChange}
-            label="Confirm Password"
+            label="Confirm Password*"
             required
         />
-        <CustomButton type="submit">SIGN UP</CustomButton>
+        <div className='buttons'>
+            <CustomButton type="submit">SIGN UP</CustomButton>
+            <CustomButton type="reset">RESET</CustomButton>
+        </div>
         </form>
       </div>
     )

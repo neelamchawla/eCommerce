@@ -3,6 +3,15 @@
   flex-direction: column;
   width: 380px;
 
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .custom-button {
+    min-width: 185px !important;
+  }
+  
   .title {
     margin: 10px 0;
   }

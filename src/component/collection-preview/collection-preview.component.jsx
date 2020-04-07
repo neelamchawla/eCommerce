@@ -3,10 +3,10 @@ import SHOP_DATA from '../pages/shop/shop.data'
 import CollectionItem from '../collection-item/collection-item.component';
 import './collection-preview.styles.scss'
 
-const CollectionPreview = ({title, items}) => {
+const CollectionPreview = ({title, items, cid}) => {
   return (
     <div className="collection-preview">
-      <h1 className="title">{title.toUpperCase()}</h1>
+      <h1 className={`title animated flipInX delay-${cid}s`}>{title.toUpperCase()}</h1>
       <div className="preview">
         {
           items
