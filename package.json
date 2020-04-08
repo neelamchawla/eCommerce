@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "webpack-manifest-plugin": "^2.2.0"
   }
 }
