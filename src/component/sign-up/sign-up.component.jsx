@@ -56,7 +56,7 @@ class SignUp extends Component {
     return (
       <div className="sign-up">
           <h1>SIGN UP</h1>
-          <h2 class="animated tada delay-2s">I Do Not Have An Account</h2>
+          <h2 className="animated tada delay-2s">I Do Not Have An Account</h2>
           <span>Sign up with your email and password</span>
         <form className="sign-up-form" onSubmit={this.handleSubmit}>
         <FormInput 

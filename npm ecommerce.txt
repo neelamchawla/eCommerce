@@ -96,3 +96,706 @@ npm i node-sass
 npm i firebase
 
 
+=============================================
+
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package.json
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+Everything up-to-date
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package.json
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ ^Mnpm install gh-pages --save-dev
+      1 [sig] sh 85! sigpacket::process: Suppressing signal 18 to win32 process (pid 1996)
+
+[1]+  Stopped                 npm install gh-pages --save-dev
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm install gh-pages --save-dev
+npm WARN react-scripts@3.4.1 requires a peer of typescript@^3.2.1 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of sass@^1.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of fibers@>= 3.1.0 but none is installed. You must install peer dependencies yourself.
+npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gh-pages@2.2.0
+updated 1 package and audited 932206 packages in 83.535s
+found 3 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+npm WARN react-scripts@3.4.1 requires a peer of typescript@^3.2.1 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of sass@^1.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of fibers@>= 3.1.0 but none is installed. You must install peer dependencies yourself.
+npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gh-pages@2.2.0
+updated 1 package and audited 932206 packages in 74.302s
+found 3 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+npm ERR! missing script: deploy
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\RAMRAKHIANI\AppData\Roaming\npm-cache\_logs\2020-04-07T10_05_01_156Z-debug.log
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm ERR! missing script: start
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\RAMRAKHIANI\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.9.0 C:\Program Files\nodejs\node_modules\npm
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package.json
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+Everything up-to-date
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+npm ERR! missing script: deploy
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\RAMRAKHIANI\AppData\Roaming\npm-cache\_logs\2020-04-07T10_12_20_744Z-debug.log
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm start
+
+> ecommerce@0.1.0 start D:\React Projects\ecommerce
+> react-scripts start
+
+Something is already running on port 3000.
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run build
+
+> ecommerce@0.1.0 build D:\React Projects\ecommerce
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/component/pages/homepage/homepage.component.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+
+./src/App.js
+  Line 2:25:  'Link' is defined but never used  no-unused-vars
+
+./src/component/collection-preview/collection-preview.component.jsx
+  Line 2:8:  'SHOP_DATA' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  197.21 KB  build\static\js\2.98fa8d85.chunk.js
+  4.67 KB    build\static\js\main.8acc1604.chunk.js
+  1.53 KB    build\static\css\main.05f21a9b.chunk.css
+  774 B      build\static\js\runtime-main.54de1d03.js
+
+The project was built assuming it is hosted at /ecommerce/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+npm ERR! missing script: deploy
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\RAMRAKHIANI\AppData\Roaming\npm-cache\_logs\2020-04-07T11_15_11_973Z-debug.log
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+Everything up-to-date
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        build/
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git add -A
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/asset-manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/precache-manifest.f834386316d0b68da565d2e99e3310d8.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/robots.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/service-worker.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/css/main.05f21a9b.chunk.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.98fa8d85.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.98fa8d85.chunk.js.LICENSE.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/main.8acc1604.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/runtime-main.54de1d03.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/media/crown.ed28accb.svg.
+The file will have its original line endings in your working directory
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   build/asset-manifest.json
+        new file:   build/favicon.ico
+        new file:   build/index.html
+        new file:   build/logo192.png
+        new file:   build/logo512.png
+        new file:   build/manifest.json
+        new file:   build/precache-manifest.f834386316d0b68da565d2e99e3310d8.js
+        new file:   build/robots.txt
+        new file:   build/service-worker.js
+        new file:   build/static/css/main.05f21a9b.chunk.css
+        new file:   build/static/css/main.05f21a9b.chunk.css.map
+        new file:   build/static/js/2.98fa8d85.chunk.js
+        new file:   build/static/js/2.98fa8d85.chunk.js.LICENSE.txt
+        new file:   build/static/js/2.98fa8d85.chunk.js.map
+        new file:   build/static/js/main.8acc1604.chunk.js
+        new file:   build/static/js/main.8acc1604.chunk.js.map
+        new file:   build/static/js/runtime-main.54de1d03.js
+        new file:   build/static/js/runtime-main.54de1d03.js.map
+        new file:   build/static/media/crown.ed28accb.svg
+        modified:   package.json
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+Everything up-to-date
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+npm ERR! missing script: deploy
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\RAMRAKHIANI\AppData\Roaming\npm-cache\_logs\2020-04-07T11_16_47_482Z-debug.log
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git add .
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   build/asset-manifest.json
+        new file:   build/favicon.ico
+        new file:   build/index.html
+        new file:   build/logo192.png
+        new file:   build/logo512.png
+        new file:   build/manifest.json
+        new file:   build/precache-manifest.f834386316d0b68da565d2e99e3310d8.js
+        new file:   build/robots.txt
+        new file:   build/service-worker.js
+        new file:   build/static/css/main.05f21a9b.chunk.css
+        new file:   build/static/css/main.05f21a9b.chunk.css.map
+        new file:   build/static/js/2.98fa8d85.chunk.js
+        new file:   build/static/js/2.98fa8d85.chunk.js.LICENSE.txt
+        new file:   build/static/js/2.98fa8d85.chunk.js.map
+        new file:   build/static/js/main.8acc1604.chunk.js
+        new file:   build/static/js/main.8acc1604.chunk.js.map
+        new file:   build/static/js/runtime-main.54de1d03.js
+        new file:   build/static/js/runtime-main.54de1d03.js.map
+        new file:   build/static/media/crown.ed28accb.svg
+        modified:   package.json
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+npm ERR! missing script: deploy
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\RAMRAKHIANI\AppData\Roaming\npm-cache\_logs\2020-04-07T11_44_08_652Z-debug.log
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git add .
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   build/asset-manifest.json
+        new file:   build/favicon.ico
+        new file:   build/index.html
+        new file:   build/logo192.png
+        new file:   build/logo512.png
+        new file:   build/manifest.json
+        new file:   build/precache-manifest.f834386316d0b68da565d2e99e3310d8.js
+        new file:   build/robots.txt
+        new file:   build/service-worker.js
+        new file:   build/static/css/main.05f21a9b.chunk.css
+        new file:   build/static/css/main.05f21a9b.chunk.css.map
+        new file:   build/static/js/2.98fa8d85.chunk.js
+        new file:   build/static/js/2.98fa8d85.chunk.js.LICENSE.txt
+        new file:   build/static/js/2.98fa8d85.chunk.js.map
+        new file:   build/static/js/main.8acc1604.chunk.js
+        new file:   build/static/js/main.8acc1604.chunk.js.map
+        new file:   build/static/js/runtime-main.54de1d03.js
+        new file:   build/static/js/runtime-main.54de1d03.js.map
+        new file:   build/static/media/crown.ed28accb.svg
+        modified:   package.json
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+
+> ecommerce@0.1.0 predeploy D:\React Projects\ecommerce
+> npm run build
+
+
+> ecommerce@0.1.0 build D:\React Projects\ecommerce
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/component/pages/homepage/homepage.component.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+
+./src/App.js
+  Line 2:25:  'Link' is defined but never used  no-unused-vars
+
+./src/component/collection-preview/collection-preview.component.jsx
+  Line 2:8:  'SHOP_DATA' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  197.21 KB  build\static\js\2.98fa8d85.chunk.js
+  4.67 KB    build\static\js\main.8acc1604.chunk.js
+  1.53 KB    build\static\css\main.05f21a9b.chunk.css
+  774 B      build\static\js\runtime-main.54de1d03.js
+
+The project was built assuming it is hosted at /ecommerce/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+
+> ecommerce@0.1.0 deploy D:\React Projects\ecommerce
+> gh-pages -d build
+
+Published
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm i extract-css-chunks-webpack-plugin
+npm WARN react-scripts@3.4.1 requires a peer of typescript@^3.2.1 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of sass@^1.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of fibers@>= 3.1.0 but none is installed. You must install peer dependencies yourself.
+npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ extract-css-chunks-webpack-plugin@4.7.4
+added 17 packages from 8 contributors and audited 932259 packages in 101.079s
+found 3 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm audit fix
+npm WARN react-scripts@3.4.1 requires a peer of typescript@^3.2.1 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of sass@^1.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN sass-loader@8.0.2 requires a peer of fibers@>= 3.1.0 but none is installed. You must install peer dependencies yourself.
+npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+up to date in 28.283s
+fixed 0 of 3 vulnerabilities in 932259 scanned packages
+  3 vulnerabilities required manual review and could not be updated
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   build/asset-manifest.json
+        new file:   build/favicon.ico
+        new file:   build/index.html
+        new file:   build/logo192.png
+        new file:   build/logo512.png
+        new file:   build/manifest.json
+        new file:   build/precache-manifest.f834386316d0b68da565d2e99e3310d8.js
+        new file:   build/robots.txt
+        new file:   build/service-worker.js
+        new file:   build/static/css/main.05f21a9b.chunk.css
+        new file:   build/static/css/main.05f21a9b.chunk.css.map
+        new file:   build/static/js/2.98fa8d85.chunk.js
+        new file:   build/static/js/2.98fa8d85.chunk.js.LICENSE.txt
+        new file:   build/static/js/2.98fa8d85.chunk.js.map
+        new file:   build/static/js/main.8acc1604.chunk.js
+        new file:   build/static/js/main.8acc1604.chunk.js.map
+        new file:   build/static/js/runtime-main.54de1d03.js
+        new file:   build/static/js/runtime-main.54de1d03.js.map
+        new file:   build/static/media/crown.ed28accb.svg
+        modified:   package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+        modified:   package.json
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git add .
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+Everything up-to-date
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+
+> ecommerce@0.1.0 predeploy D:\React Projects\ecommerce
+> npm run build
+
+
+> ecommerce@0.1.0 build D:\React Projects\ecommerce
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/component/pages/homepage/homepage.component.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+
+./src/App.js
+  Line 2:25:  'Link' is defined but never used  no-unused-vars
+
+./src/component/collection-preview/collection-preview.component.jsx
+  Line 2:8:  'SHOP_DATA' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  197.21 KB  build\static\js\2.98fa8d85.chunk.js
+  4.67 KB    build\static\js\main.8acc1604.chunk.js
+  1.53 KB    build\static\css\main.05f21a9b.chunk.css
+  774 B      build\static\js\runtime-main.54de1d03.js
+
+The project was built assuming it is hosted at /ecommerce/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+
+> ecommerce@0.1.0 deploy D:\React Projects\ecommerce
+> gh-pages -d build
+
+Published
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+Everything up-to-date
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git add .
+warning: LF will be replaced by CRLF in build/asset-manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/precache-manifest.f834386316d0b68da565d2e99e3310d8.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/robots.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/service-worker.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/css/main.05f21a9b.chunk.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.98fa8d85.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.98fa8d85.chunk.js.LICENSE.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/main.8acc1604.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/runtime-main.54de1d03.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/media/crown.ed28accb.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+
+> ecommerce@0.1.0 predeploy D:\React Projects\ecommerce
+> npm run build
+
+
+> ecommerce@0.1.0 build D:\React Projects\ecommerce
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/component/pages/homepage/homepage.component.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+
+./src/App.js
+  Line 2:25:  'Link' is defined but never used  no-unused-vars
+
+./src/component/collection-preview/collection-preview.component.jsx
+  Line 2:8:  'SHOP_DATA' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  197.21 KB (-6 B)  build\static\js\2.c92c2fa6.chunk.js
+  4.67 KB           build\static\js\main.8acc1604.chunk.js
+  1.53 KB           build\static\css\main.05f21a9b.chunk.css
+  771 B (-3 B)      build\static\js\runtime-main.aa99df5f.js
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+
+> ecommerce@0.1.0 deploy D:\React Projects\ecommerce
+> gh-pages -d build
+
+Published
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git add .
+warning: LF will be replaced by CRLF in build/asset-manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/robots.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/service-worker.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/css/main.05f21a9b.chunk.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/main.8acc1604.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/media/crown.ed28accb.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/precache-manifest.5e96cfb55680c64b8327fcdb8939d524.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.c92c2fa6.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.c92c2fa6.chunk.js.LICENSE.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/runtime-main.aa99df5f.js.
+The file will have its original line endings in your working directory
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+
+> ecommerce@0.1.0 predeploy D:\React Projects\ecommerce
+> npm run build
+
+
+> ecommerce@0.1.0 build D:\React Projects\ecommerce
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/component/pages/homepage/homepage.component.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+
+./src/App.js
+  Line 2:25:  'Link' is defined but never used  no-unused-vars
+
+./src/component/collection-preview/collection-preview.component.jsx
+  Line 2:8:  'SHOP_DATA' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  197.21 KB (+6 B)  build\static\js\2.98fa8d85.chunk.js
+  4.67 KB           build\static\js\main.8acc1604.chunk.js
+  1.53 KB           build\static\css\main.05f21a9b.chunk.css
+  774 B (+3 B)      build\static\js\runtime-main.54de1d03.js
+
+The project was built assuming it is hosted at /ecommerce/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+
+> ecommerce@0.1.0 deploy D:\React Projects\ecommerce
+> gh-pages -d build
+
+Published
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$
+
+

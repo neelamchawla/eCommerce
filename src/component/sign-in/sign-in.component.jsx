@@ -49,7 +49,7 @@ class SignIn extends Component {
     return (
       <div className="sign-in">
       <h1>SIGN IN</h1>
-        <h2 class="animated tada">I Already Have An Account</h2>
+        <h2 className="animated tada">I Already Have An Account</h2>
         <span>Sign in with your email and password</span>
 
         <form onSubmit={this.handleSubmit}>
