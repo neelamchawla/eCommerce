@@ -27,9 +27,11 @@ class SignIn extends Component {
                 email: '',
                 password: ''
               });
+          alert("Welcome Back");
         }
         catch (error) {
           console.log(error);
+          alert(error);
         }
 
         // before using try n catch

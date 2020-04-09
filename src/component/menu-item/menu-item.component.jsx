@@ -1,5 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom';
+//higher order component, takes any component and return new modified component
+
 import './menu-item.styles.scss'
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
@@ -7,10 +9,11 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
     onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
         <div
-        className="background-image"
-        style={{
-            backgroundImage: `url(${imageUrl})`
-        }} />
+            className="background-image"
+            style={{
+                backgroundImage: `url(${imageUrl})`
+            }}
+        />
         <div className="content">
             <h1 className="title">{title.toLocaleUpperCase()}</h1>
             <span className="subtitle">SHOP NOW</span>

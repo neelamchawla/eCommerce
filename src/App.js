@@ -10,6 +10,7 @@ import SignInAndSignUpPage from './component/pages/sign-in-and-sign-up/sign-in-a
 import { auth, createUserProfileDocument } from './component/firebase/firebase.utils';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.action';
+import Footer from './component/footer/footer.component';
 
 // const HatsPage = () => (
 //   <div>
@@ -89,6 +90,7 @@ class App extends Component {
         <Header />
         {/* after redux */}
 
+        <div className="buffer" />
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
@@ -104,6 +106,7 @@ class App extends Component {
           />
         </Switch>
         </header>
+        <Footer />
       </div>
     );
   }

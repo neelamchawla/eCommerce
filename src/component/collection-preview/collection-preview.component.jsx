@@ -8,12 +8,23 @@ const CollectionPreview = ({title, items, cid, id}) => {
     <div className="collection-preview">
       <h1 className={`title animated flipInX delay-${cid}s`}>{title.toUpperCase()}</h1>
       <div className="preview">
-        {
+        {/* {
           items
           .filter((item, idx) => idx < 4)
           .map(({id, ...ItemProps}) => (
           <CollectionItem key={id}
             {...ItemProps}
+          />
+          ))
+        } */}
+        {/* before adding to cart */}
+
+        {
+          items
+          .filter((item, idx) => idx < 4)
+          .map( item => (
+          <CollectionItem key={item.id}
+            item={item}
           />
           ))
         }

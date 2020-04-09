@@ -1,0 +1,11 @@
+.footer {
+    background-color: #00808085;
+    padding: 1%;
+    margin-bottom: -2%;
+    font: message-box;
+    box-shadow: 1px 7px 8px 7px black;
+
+    &:hover{
+        animation: bounce 1s;
+    }
+}

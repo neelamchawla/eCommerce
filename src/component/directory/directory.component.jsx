@@ -21,14 +21,14 @@ class Directory extends Component {
               imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
               id: 2,
               // linkUrl: 'shop/jackets'
-              linkUrl: ''
+              linkUrl: 'jackets'
             },
             {
               title: 'sneakers',
               imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
               id: 3,
               // linkUrl: 'shop/sneakers'
-              linkUrl: ''
+              linkUrl: 'sneakers'
             },
             {
               title: 'womens',
@@ -36,7 +36,7 @@ class Directory extends Component {
               size: 'large',
               id: 4,
               // linkUrl: 'shop/womens'
-              linkUrl: ''
+              linkUrl: 'womens'
             },
             {
               title: 'mens',
@@ -44,7 +44,7 @@ class Directory extends Component {
               size: 'large',
               id: 5,
               // linkUrl: 'shop/mens'
-              linkUrl: ''
+              linkUrl: 'mens'
             }
           ]
       }
@@ -70,8 +70,8 @@ class Directory extends Component {
             />
         ))}
       </div>
-    )
+    );
   }
 }
 
-export default Directory
+export default Directory;
