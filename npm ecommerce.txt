@@ -799,3 +799,200 @@ RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
 $
 
 
+===========================================================================
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/component/header/header.component.jsx
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   build/asset-manifest.json
+        modified:   build/index.html
+        deleted:    build/precache-manifest.459978218ba75e99f2fb99e9eb564ea8.js
+        modified:   build/service-worker.js
+        deleted:    build/static/js/2.49980e1e.chunk.js
+        deleted:    build/static/js/2.49980e1e.chunk.js.LICENSE.txt
+        deleted:    build/static/js/2.49980e1e.chunk.js.map
+        deleted:    build/static/js/main.c9c67e7f.chunk.js
+        deleted:    build/static/js/main.c9c67e7f.chunk.js.map
+        modified:   public/index.html
+        modified:   src/App.css
+        modified:   src/App.js
+        modified:   src/component/collection-item/collection-item.component.jsx
+        modified:   src/component/collection-item/collection-item.styles.scss
+        modified:   src/component/collection-preview/collection-preview.component.jsx
+        modified:   src/component/collection-preview/collection-preview.styles.scss
+        modified:   src/component/custom-button/custom-button.component.jsx
+        modified:   src/component/custom-button/custom-button.styles.scss
+        modified:   src/component/directory/directory.component.jsx
+        modified:   src/component/header/header.component.jsx
+        modified:   src/component/header/header.styles.scss
+        modified:   src/component/menu-item/menu-item.component.jsx
+        modified:   src/component/pages/homepage/homepage.component.jsx
+        modified:   src/component/pages/homepage/homepage.styles.scss
+        modified:   src/component/pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.scss
+        modified:   src/component/sign-in/sign-in.component.jsx
+        modified:   src/index.js
+        modified:   src/redux/root-reducer.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        build/precache-manifest.9017ee53c85170e6024ad54140ef82c5.js
+        build/static/js/2.63f7df05.chunk.js
+        build/static/js/2.63f7df05.chunk.js.LICENSE.txt
+        build/static/js/2.63f7df05.chunk.js.map
+        build/static/js/main.0095cfe9.chunk.js
+        build/static/js/main.0095cfe9.chunk.js.map
+        src/App_route.js
+        src/component/cart-dropdown/
+        src/component/cart-icon/
+        src/component/footer/
+        src/redux/cart/
+
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git add -A
+warning: LF will be replaced by CRLF in build/asset-manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/service-worker.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in public/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/App.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/App.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/component/collection-item/collection-item.styles.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/component/collection-preview/collection-preview.styles.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/component/custom-button/custom-button.styles.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/component/header/header.styles.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/component/pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/index.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/precache-manifest.9017ee53c85170e6024ad54140ef82c5.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.63f7df05.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/2.63f7df05.chunk.js.LICENSE.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/static/js/main.0095cfe9.chunk.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/component/cart-dropdown/cart-dropdown.styles.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/component/cart-icon/cart-icon.styles.scss.
+The file will have its original line endings in your working directory
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git commit -m "Shopping cart added"
+[master 7870a94] Shopping cart added
+ 42 files changed, 440 insertions(+), 71 deletions(-)
+ rewrite build/index.html (77%)
+ rename build/{precache-manifest.459978218ba75e99f2fb99e9eb564ea8.js => precache-manifest.9017ee53c85170e6024ad54140ef82c5.js} (58%)
+ delete mode 100644 build/static/js/2.49980e1e.chunk.js
+ delete mode 100644 build/static/js/2.49980e1e.chunk.js.map
+ create mode 100644 build/static/js/2.63f7df05.chunk.js
+ rename build/static/js/{2.49980e1e.chunk.js.LICENSE.txt => 2.63f7df05.chunk.js.LICENSE.txt} (100%)
+ create mode 100644 build/static/js/2.63f7df05.chunk.js.map
+ rename build/static/js/{main.c9c67e7f.chunk.js => main.0095cfe9.chunk.js} (56%)
+ create mode 100644 build/static/js/main.0095cfe9.chunk.js.map
+ delete mode 100644 build/static/js/main.c9c67e7f.chunk.js.map
+ create mode 100644 src/App_route.js
+ create mode 100644 src/component/cart-dropdown/cart-dropdown.component.jsx
+ create mode 100644 src/component/cart-dropdown/cart-dropdown.styles.scss
+ create mode 100644 src/component/cart-icon/cart-icon.component.jsx
+ create mode 100644 src/component/cart-icon/cart-icon.styles.scss
+ create mode 100644 src/component/cart-icon/shopping-bag.svg
+ create mode 100644 src/component/footer/footer.component.jsx
+ create mode 100644 src/component/footer/footer.styles.scss
+ create mode 100644 src/redux/cart/cart.action.js
+ create mode 100644 src/redux/cart/cart.reducer.js
+ create mode 100644 src/redux/cart/cart.types.js
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git push origin master
+Enumerating objects: 94, done.
+Counting objects: 100% (94/94), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (61/61), done.
+Writing objects: 100% (61/61), 858.49 KiB | 2.99 MiB/s, done.
+Total 61 (delta 19), reused 0 (delta 0)
+remote: Resolving deltas: 100% (19/19), completed with 19 local objects.
+To https://github.com/neelamchawla/ecommerce.git
+   25e9fed..7870a94  master -> master
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)
+$ npm run deploy
+
+> ecommerce@0.1.0 predeploy D:\React Projects\ecommerce
+> npm run build
+
+
+> ecommerce@0.1.0 build D:\React Projects\ecommerce
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/index.js
+  Line 10:8:  'AppRoute' is defined but never used  no-unused-vars
+
+./src/component/pages/homepage/homepage.component.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+
+./src/component/collection-preview/collection-preview.component.jsx
+  Line 2:8:  'SHOP_DATA' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  205.55 KB (+288 B)  build\static\js\2.c3404067.chunk.js
+  6.13 KB (+1.17 KB)  build\static\js\main.8cd072c0.chunk.js
+  1.8 KB (+276 B)     build\static\css\main.9c3d1aa8.chunk.css
+  774 B               build\static\js\runtime-main.54de1d03.js
+
+The project was built assuming it is hosted at /ecommerce/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+
+> ecommerce@0.1.0 deploy D:\React Projects\ecommerce
+> gh-pages -d build
+
+Published
+
+

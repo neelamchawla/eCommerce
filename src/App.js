@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
 
 import './App.css';
 
 import Header from './component/header/header.component';
 import HomePage from './component/pages/homepage/homepage.component';
 import ShopPage from './component/pages/shop/shop.component';
-import SignInAndSignUpPage from './component/pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
-import { auth, createUserProfileDocument } from './component/firebase/firebase.utils';
-import { connect } from 'react-redux';
-import { setCurrentUser } from './redux/user/user.action';
 import Footer from './component/footer/footer.component';
+import SignInAndSignUpPage from './component/pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import CheckOutPage from './component/pages/checkout/checkout.component';
+
+import { auth, createUserProfileDocument } from './component/firebase/firebase.utils';
+import { setCurrentUser } from './redux/user/user.action';
+import { selectCurrentUser } from './redux/user/user.selectors';
 
 // const HatsPage = () => (
 //   <div>
@@ -94,6 +99,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
+          <Route exact path='/CheckOut' component={CheckOutPage} />
           
           {/* <Route path='/signin' component={SignInAndSignUpPage} /> */}
           {/* before mapStateToProps */}
@@ -113,8 +119,18 @@ class App extends Component {
 }
 
 //--- Redirect -> for signin ability
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+// const mapStateToProps = ({ user }) => ({
+//   currentUser: user.currentUser
+// });
+
+// after adding selectCurrentUser
+// const mapStateToProps = state => ({
+//   currentUser: selectCurrentUser(state)
+// });
+
+// and after adding createStructuredSelector
+const mapStateToProps = createStructuredSelector ({
+  currentUser: selectCurrentUser
 });
 
 // remove constructor after adding this

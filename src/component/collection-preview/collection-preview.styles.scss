@@ -11,6 +11,15 @@
     opacity: 0.7;
     padding: 2%;
 
+    &:hover{
+      font-size: 2vw;
+      font-weight: 600;
+      color: whitesmoke;
+      background-color: #206161;
+      cursor: pointer;
+      box-shadow: 3px 3px 3px 2px #61c1c1;
+    }
+
   }
 
   .preview {
