@@ -1,17 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import { withRouter } from 'react-router-dom';
 
+import empty_cart from '../../assests/empty_cart.png';
 import './cart-dropdown.styles.scss';
 
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.component';
 import { selectCartItems } from '../../redux/cart/cart.selectors';
-import empty_cart from '../../assests/empty_cart.png';
-import { withRouter } from 'react-router-dom';
+import { toggleCartHidden } from '../../redux/cart/cart.action';
 
-const CartDropdown = ({  cartItems, history }) => (
-    <div className="cart-dropdown">
+// to chk the otherProps property includes dispatch
+// const CartDropdown = ({  cartItems, history, ...otherProps }) => {
+    //     console.log(otherProps)
+    //     return ( 
+
+// add dispatch
+const CartDropdown = ({  cartItems, history, dispatch }) => (
+        <div className="cart-dropdown">
         <div className="cart-items">
             {
                 cartItems.length
@@ -29,11 +36,16 @@ const CartDropdown = ({  cartItems, history }) => (
             }
         </div>
             {/* after adding history add onclick */}
-            <CustomButton onClick={() => history.push('/CheckOut')}>
+            <CustomButton onClick={() => {
+                history.push('/CheckOut');
+                dispatch(toggleCartHidden())
+                // to hide the cartdrop down when pressing this custom_btn and going in checkut page
+                }}>
                 GO TO CHECKOUT
             </CustomButton>
     </div>
-);
+    );
+// }
 
 // const mapStateToProps = state => ({
 //     cartItems: selectCartItems(state)
