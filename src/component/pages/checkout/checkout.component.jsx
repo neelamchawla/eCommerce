@@ -6,7 +6,7 @@ import { selectCartItems, selectCartTotal } from '../../../redux/cart/cart.selec
 
 const CheckOutPage = ({ cartItems, total }) => (
     <div className="checkout-page">
-        <h2>CHECK OUT PAGE</h2>
+        <h1>CHECK OUT PAGE</h1>
     
     <div className="checkout-header">
         <div className="header-block">
@@ -20,6 +20,9 @@ const CheckOutPage = ({ cartItems, total }) => (
         </div>
         <div className="header-block">
             <span>PRICE</span>
+        </div>
+        <div className="header-block">
+            <span>REMOVE</span>
         </div>
     </div>
     {
