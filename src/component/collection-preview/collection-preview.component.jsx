@@ -2,11 +2,16 @@ import React from 'react';
 // import SHOP_DATA from '../pages/shop/shop.data'
 import CollectionItem from '../collection-item/collection-item.component';
 import './collection-preview.styles.scss'
+import { Link } from 'react-router-dom';
 
 const CollectionPreview = ({ title, items, cid }) => {
   return (
     <div className="collection-preview">
-      <h1 className={`title animated flipInX delay-${cid}s`}>{title.toUpperCase()}</h1>
+      <Link className='logo-container' to ={`/shop/${title.toLowerCase()}`}>
+          <h1 className={`title animated flipInX delay-${cid}s`}>
+              {title.toUpperCase()}
+          </h1>
+      </Link>
       <div className="preview">
         {/* {
           items

@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 
 import CollectionItem from '../../collection-item/collection-item.component';
 import { selectCollection } from '../../../redux/shop/shop.selectors';
+import { Link } from 'react-router-dom';
 
 import './collection.styles.scss';
+import back from '../../../assests/back.png';
 
 // const CollectionPage = ({ match, collection }) => {
 //   console.log("match", match);
@@ -16,6 +18,11 @@ const CollectionPage = ({ collection }) => {
   return (
     <div className="collection-page">
       <h2 className="title animated flipInX">{ title }</h2>
+      <div>
+        <Link to ='/shop'>
+        <img src={back} />
+        </Link>
+      </div>
       <div className="items">
         {
           items.map(item => (
