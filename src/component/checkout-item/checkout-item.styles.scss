@@ -9,6 +9,17 @@
   align-items: center;
   background-color: #f5f5f5b5;
 
+  &:hover{
+    cursor: pointer;
+    background-color: #2d585cb3;
+    // box-sizing: content-box;
+    width: 103%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 7px 5px whitesmoke;
+    transition: background-color 0.5s, box-shadow 1s, width 2s, ;
+    transition-timing-function: ease-in;
+  }
+
   .image-container {
     width: 23%;
     padding-right: 15px;
@@ -19,13 +30,21 @@
     }
   }
   .name,
-  .quantity,
-  .price {
-    width: 23%;
+  .price,
+  .quantity {
+    width: 20%;
+  }
+  
+  .name {
+    padding-left: 2%;
   }
 
+  .price {
+    padding-left: 11% ;
+  }
+  
   .quantity {
-    padding-left: 6%;
+    padding-left: 10%;
     display: flex;
 
     .arrow {
@@ -38,7 +57,7 @@
   }
 
   .remove-button {
-    padding-left: 12px;
+    padding-left: 9% ;
     cursor: pointer;
   }
 }

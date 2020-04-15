@@ -16,6 +16,7 @@ import CheckOutPage from './component/pages/checkout/checkout.component';
 import { auth, createUserProfileDocument } from './component/firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.action';
 import { selectCurrentUser } from './redux/user/user.selectors';
+import Ecommerce from './component/pages/ecommerce/ecommerce';
 
 // const HatsPage = () => (
 //   <div>
@@ -97,6 +98,7 @@ class App extends Component {
 
         <div className="buffer" />
         <Switch>
+          <Route path='/ecommerce' component={Ecommerce} />
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
           <Route exact path='/CheckOut' component={CheckOutPage} />

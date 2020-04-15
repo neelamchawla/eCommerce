@@ -42,6 +42,12 @@ const Header = ({ currentUser, hidden }) =>
       }
     </div>
   )
+  
+
+// before selectCurrentUser AND selectCartHidden
+// const mapStateToProps = ({ user: { currentUser }, cart: { hidden }}) => ({
+//   currentUser, hidden
+// });
 
 //before cart hidden
 // const mapStateToProps = state => ({
@@ -58,9 +64,5 @@ const mapStateToProps = createStructuredSelector({
   hidden: selectCartHidden
 });
 
-// before selectCurrentUser AND selectCartHidden
-// const mapStateToProps = ({ user: { currentUser }, cart: { hidden }}) => ({
-//   currentUser, hidden
-// });
 
 export default withRouter(connect(mapStateToProps)(Header));
