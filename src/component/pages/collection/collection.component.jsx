@@ -20,7 +20,7 @@ const CollectionPage = ({ collection }) => {
       <h2 className="title animated flipInX">{ title }</h2>
       <div>
         <Link to ='/shop'>
-        <img src={back} />
+        <img src={back} alt="back_button" />
         </Link>
       </div>
       <div className="items">

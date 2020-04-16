@@ -1,8 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { createStructuredSelector } from 'reselect'
 // createSelector
-import './checkout.styles.scss'
+import { createStructuredSelector } from 'reselect'
+import { Link } from 'react-router-dom';
+
+import './checkout.styles.scss';
+import back from '../../../assests/back.png';
 
 import { selectCartItems, selectCartTotal } from '../../../redux/cart/cart.selectors'
 import CheckoutItem from '../../checkout-item/checkout-item.component'
@@ -10,9 +13,12 @@ import StripeCheckoutButton from '../../stripe-button/stripe-button.component'
 
 const CheckOutPage = ({ cartItems, total }) => (
     <div className="checkout-page">
-        <h1>CHECK OUT PAGE</h1>
+        <h1 className="title animated flipInX delay-1s">CHECK OUT PAGE</h1>
+        <Link to ='/shop'>
+            <img src={back} className="back_btn" alt="back_button" />
+        </Link>
     
-    <div className="checkout-header">
+    <div className="checkout-header animated flipInX delay-2s">
         <div className="header-block">
             <span>PRODUCT</span>
         </div>
