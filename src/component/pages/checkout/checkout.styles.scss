@@ -17,9 +17,24 @@
     .back_btn {
       width: 7vw;
       margin-left: 66vw;
-      margin-top: -6%;
+      margin-top: -7%;
       margin-bottom: -2vw;
       cursor: pointer;
+    }
+
+    .more_btn {
+      background-color: yellowgreen;
+      width: 17vw;
+      position: absolute;
+      clear: both;
+      font-size: 1.5vw;
+      margin-left: 48%;
+      margin-top: -1.2%;
+      border-radius: 20%;
+      animation-duration: 16s;
+      animation-delay: 30s;
+      animation-iteration-count: infinite;
+
     }
 
   .checkout-header {

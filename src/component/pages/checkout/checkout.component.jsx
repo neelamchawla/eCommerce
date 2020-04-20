@@ -15,6 +15,7 @@ const CheckOutPage = ({ cartItems, total }) => (
     <div className="checkout-page">
         <h1 className="title animated flipInX delay-1s">CHECK OUT PAGE</h1>
         <Link to ='/shop'>
+            <span className="more_btn animated bounceIn">Still want to Check more Item, Press this</span>
             <img src={back} className="back_btn" alt="back_button" />
         </Link>
     
