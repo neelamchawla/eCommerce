@@ -13,10 +13,18 @@ import Footer from './component/footer/footer.component';
 import SignInAndSignUpPage from './component/pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckOutPage from './component/pages/checkout/checkout.component';
 
-import { auth, createUserProfileDocument } from './component/firebase/firebase.utils';
+import { auth, 
+  createUserProfileDocument
+  //-- collection into firebase added -- unchk
+  // , addCollectionAndDocuments  //remove this as collectionsArray
+} from './component/firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.action';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import Ecommerce from './component/pages/ecommerce/ecommerce';
+
+//-- collection into firebase added -- unchk
+// import { selectCollectionsForPreview } from './redux/shop/shop.selectors';  //remove this as collectionsArray 
+
 
 // const HatsPage = () => (
 //   <div>
@@ -38,7 +46,11 @@ class App extends Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
-    // -- add props property aft setcurrentuser add
+    //-- collection into firebase added -- unchk
+    // -- add props property aft setCurrentUser add
+    // const { setCurrentUser, collectionsArray } = this.props;
+// -------------------------------
+    //== remove collectionsArray after async the collection data to firebase
     const { setCurrentUser } = this.props;
 
     // auth.onAuthStateChanged(user => {
@@ -55,6 +67,8 @@ class App extends Component {
           const userRef = await createUserProfileDocument(userAuth);
           
           userRef.onSnapshot(snapShot => {
+            // whenever there is any add/delete or any updates are made it ssends data to snapshot listner and it gives o/p in setCurrentUser -> this way v get currentUser > shoplist
+
             // console.log(snapShot.data());
             // this.setState({
             //   currentUser: {
@@ -76,8 +90,12 @@ class App extends Component {
         }
         // this.setState({ currentUser: userAuth });
 
-            //--- currentUser replace with this
+        //--- currentUser replace with this
         setCurrentUser( userAuth );
+        
+        //-- collection into firebase added -- unchk
+        //   addCollectionAndDocuments('collections', collectionsArray.map(({title, items}) => ({title, items}))
+        // );
       });
   }
 
@@ -133,6 +151,8 @@ class App extends Component {
 // and after adding createStructuredSelector
 const mapStateToProps = createStructuredSelector ({
   currentUser: selectCurrentUser
+  //-- collection into firebase added -- unchk
+  // , collectionsArray: selectCollectionsForPreview
 });
 
 // remove constructor after adding this

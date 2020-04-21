@@ -18,12 +18,21 @@ export const selectCollections = createSelector(
 
 export const selectCollectionsForPreview = createSelector(
     [selectCollections],
-    collections => Object.keys(collections).map(key => collections[key])
+    // collections => Object.keys(collections).map(key => collections[key])
+    // after removing SHOP_DATA from the project
+    collections => collections 
+    ? Object.keys(collections).map(key => collections[key])
+    : []
 );
 
 export const selectCollection = collectionUrlParam =>
     createSelector(
         [selectCollections],
         // collections => collections.find(collection => collection.cid === COLLECTION_ID_MAP[collectionUrlParam])
-        collections => collections[collectionUrlParam]
+
+        // after removing SHOP_DATA from the project
+        // collections => collections[collectionUrlParam]
+        collections => (collections
+        ? collections[collectionUrlParam]
+        : null)
 );

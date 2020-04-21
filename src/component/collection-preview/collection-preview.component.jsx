@@ -10,6 +10,7 @@ const CollectionPreview = ({ title, items, cid }) => {
       <Link className='logo-container' to ={`/shop/${title.toLowerCase()}`}>
           <h1 className={`title animated flipInX delay-${cid}s`}>
               {title.toUpperCase()}
+              <span className="msg">more --></span>
           </h1>
       </Link>
       <div className="preview">

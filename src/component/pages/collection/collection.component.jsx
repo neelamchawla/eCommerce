@@ -11,6 +11,7 @@ import back from '../../../assests/back.png';
 // const CollectionPage = ({ match, collection }) => {
 //   console.log("match", match);
 //   console.log("params", match.params.collectionId);
+
 const CollectionPage = ({ collection }) => {
   console.log("collection", collection)
 
