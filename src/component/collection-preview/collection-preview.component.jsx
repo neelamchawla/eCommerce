@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom';
 const CollectionPreview = ({ title, items, cid }) => {
   return (
     <div className="collection-preview">
+      <br/>
       <Link className='logo-container' to ={`/shop/${title.toLowerCase()}`}>
-          <h1 className={`title animated flipInX delay-${cid}s`}>
+          <h1 className={`title animated flipInX delay-1s`}>
               {title.toUpperCase()}
               <span className="msg">more --></span>
           </h1>

@@ -87,4 +87,28 @@
     margin-top: 40px;
     font-size: 24px;
   }
+
+  /* Landscape phones and down */
+  @media (max-width: 500px) { 
+
+    h1 {
+      margin-top: 10vw;
+    }
+
+    .total {
+      font-size: 4vw;
+    }
+
+    .back_btn {
+      margin-left: 55vw;
+      margin-top: -10%;
+      margin-bottom: 2vw;
+    }
+    
+    .more_btn {
+      margin-left: 38%;
+      margin-top: -3.2%;
+      font-weight: 600;
+    }
+  }
 }

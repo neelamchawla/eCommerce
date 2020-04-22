@@ -27,4 +27,27 @@
       margin-bottom: 30px;
     }
   }
+  
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 768px) and (max-width: 979px) { 
+    padding: 0px;
+    padding-top: 8%;
+  }
+
+  /* Landscape phone to portrait tablet */
+  @media (min-width: 501px) and (max-width: 767px) { 
+    padding: 2%;
+    padding-top: 13%;
+    width: 94vw;
+    margin-left: -9vw;
+    margin-top: 0vw;
+  }
+
+  /* Landscape phones and down */
+  @media (max-width: 500px) { 
+    width: 85vw;
+    margin-top: 0%;
+    margin-left: -8%;
+    padding-top: 9vw;
+  }
 }
