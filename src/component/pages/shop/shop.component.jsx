@@ -103,7 +103,7 @@ class ShopPage extends React.Component {
         this.setState({ loading: false });
     });
   }
-  
+   
   render() {
     const { match } = this.props;
     const { loading } = this.state;

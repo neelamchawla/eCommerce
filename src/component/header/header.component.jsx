@@ -29,7 +29,9 @@ const Header = ({ currentUser, hidden }) =>
             (<div className='option' onClick={() => { alert("Successfully Sign Out")
               auth.signOut()
               return window.location.reload()
-            }}>SIGN OUT</div>)
+            }}>
+              SIGN OUT
+              </div>)
             :
             (<Link className='option' to='/signin'>SIGN IN</Link>)
           }
