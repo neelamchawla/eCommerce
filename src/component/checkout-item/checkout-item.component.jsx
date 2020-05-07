@@ -25,7 +25,7 @@ return (
                  onClick={() => addItem(cartItem)}
                 >&#10097;</div>
             </span>
-            <span className="price">{price}</span>
+            <span className="price">${price}</span>
             <div className="remove-button"
             onClick={() => clearItem(cartItem)}
             >&#10008;</div>

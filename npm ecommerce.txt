@@ -1,3 +1,29 @@
+npm i node-sass
+npm i redux
+npm i react-router-dom
+npm i redux-persist
+npm i firebase
+npm i react-stripe-checkout
+npm install -g heroku
+npm i styled-components
+
+https://dashboard.stripe.com/settings/checkout
+https://dashboard.heroku.com/apps
+https://devcenter.heroku.com/articles/heroku-cli
+
+================ heroku ====================
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master|REBASE-i)
+$ heroku create ecommerce-world --buildpack https://github.com/mars/create-react-app-buildpack
+Creating ecommerce-world... done
+Setting buildpack to https://github.com/mars/create-react-app-buildpack... done
+https://ecommerce-world.herokuapp.com/ | https://git.heroku.com/ecommerce-world.git
+
+RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master|REBASE-i)
+$ git push heroku master
+
+=============================================
+
 $ git clone git@github.com:neelamchawla/eCommerce.git cloned-repo
 
 
@@ -91,14 +117,6 @@ and the repository exists.
  git branch -m gh-pages master
 
 ==========================================
-
-npm i node-sass
-
-npm i firebase
-
-
-=============================================
-
 
 
 RAMRAKHIANI@DESKTOP-4ACHFB4 MINGW64 /d/React Projects/ecommerce (master)

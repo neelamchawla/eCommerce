@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { withRouter } from 'react-router-dom';
@@ -29,8 +31,12 @@ const CartDropdown = ({  cartItems, history, dispatch }) => (
                 ))
                 ) : (
                     <div className="empty-message">
+                    <Link className='option' to='/shop'>
                     <img src={empty_cart} alt='empty_cart' /><br/>
-                    <span className="empty-message"> Your cart is Empty</span>
+                    <span className="empty-message">Your cart is Empty,
+                    Go to Our Shopping page
+                    </span>
+                    </Link>
                     </div>
                 )
             }

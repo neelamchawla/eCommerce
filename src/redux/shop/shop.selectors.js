@@ -29,10 +29,20 @@ export const selectCollection = collectionUrlParam =>
     createSelector(
         [selectCollections],
         // collections => collections.find(collection => collection.cid === COLLECTION_ID_MAP[collectionUrlParam])
-
         // after removing SHOP_DATA from the project
         // collections => collections[collectionUrlParam]
-        collections => (collections
-        ? collections[collectionUrlParam]
-        : null)
+        collections => (
+            collections
+            ? collections[collectionUrlParam]
+            : null )
+);
+
+export const selectIsCollectionFetching = createSelector(
+    [selectShop],
+    shop => shop.isFetching
+);
+
+export const selectIsCollectionsLoaded = createSelector(
+    [selectShop],
+    shop => !!shop.collections
 );

@@ -21,6 +21,7 @@ const StripeCheckoutButton = ({price}) => {
             image='https://svgshare.com/i/CUz.svg'
             description = {`Your Total: $${price}`}
             amount = {priceForStripe}
+            allowRememberMe
             panelLabel = 'Pay Now'
             token = {onToken}
             stripeKey={publishableKey}

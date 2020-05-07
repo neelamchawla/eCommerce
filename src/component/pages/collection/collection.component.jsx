@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import CollectionItem from '../../collection-item/collection-item.component';
 import { selectCollection } from '../../../redux/shop/shop.selectors';
 import { Link } from 'react-router-dom';
+
+import { firestore } from '../../firebase/firebase.utils';
 
 import './collection.styles.scss';
 import back from '../../../assests/back.png';
@@ -13,8 +15,18 @@ import back from '../../../assests/back.png';
 //   console.log("params", match.params.collectionId);
 
 const CollectionPage = ({ collection }) => {
-  console.log("collection", collection)
+  console.log("collection", collection);
 
+  useEffect(() => { 
+    console.log('use effect in collection fired');
+    const unsubcribeFromCollections = firestore.collection('collections').onSnapshot(snapshot => console.log(snapshot));
+
+    return () => {
+      console.log("unsubcribeFromCollections")
+      unsubcribeFromCollections();
+    };
+  }, []);
+  
   const { title, items } = collection;
   return (
     <div className="collection-page">

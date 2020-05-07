@@ -13,6 +13,7 @@ const config = {
     measurementId: "G-XZLD1F0NPJ"
   };
 
+//
   firebase.initializeApp(config);
 
   export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -23,22 +24,24 @@ const config = {
     const userRef = firestore.doc(`users/${userAuth.uid}`);
     console.log("users",userRef);
 
-    const collectionRef = firestore.collection('users');
+    // const collectionRef = firestore.collection('users');
 
     const snapShot = await userRef.get();
     // console.log("snap",snapShot);
     console.log("snap",snapShot.data());
     
     // ---- items collection ------
-    const collectionSnapshot = await collectionRef.get();
-    console.log({collectionSnapshot});
+    // const collectionSnapshot = await collectionRef.get();
+    // console.log({collectionSnapshot});
+
+    
     // fetch all the data from backend and get access to get the list of all the users in the project --> below:
     // console.log({ collection: collectionSnapshot.docs.map(doc => doc.data()) })
     
 
     //to chk the userRef works comment if statement and uncomment the test data
     if (!snapShot.exists){
-      const { displayName, email, password } = userAuth;
+      const { displayName, email } = userAuth;
       const createAt = new Date();
 
       try{
@@ -49,7 +52,7 @@ const config = {
           // password: 'random',
           displayName,
           email,
-          password,
+          // password,
           createAt,
           ...additionalData
         })
@@ -85,6 +88,7 @@ export const addCollectionAndDocuments = async(collectionKey, objectsToAdd) => {
     return {
       routeName: encodeURI(title.toLowerCase()),
       id: docSnapshot.id,
+      // id: doc.id,
       title,
       items
     };
@@ -97,11 +101,28 @@ export const addCollectionAndDocuments = async(collectionKey, objectsToAdd) => {
   }, {})
 }
 
+export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+      unsubscribe();
+      resolve(userAuth);
+    }, reject)
+  });
+};
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
-const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({ prompt: 'select_account' });
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+
+// const provider = new firebase.auth.GoogleAuthProvider();
+// provider.setCustomParameters({ prompt: 'select_account' });
+// export const signInWithGoogle = () => auth.signInWithPopup(provider);
+
+//-------- aftr adding user.saga -------
+// moved this funtn from App.js -> "cdm" listener to here.
+
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
+googleProvider.setCustomParameters({ prompt: 'select_account' });
+export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 
 export default firebase;

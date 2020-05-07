@@ -1,50 +1,100 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+// import { withRouter } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { ReactComponent as Logo } from '../../assests/crown.svg';
-import './header.styles.scss';
+// import './header.styles.scss';
 
-import { auth } from '../firebase/firebase.utils';
+import { HeaderContainer
+  , LogoContainer
+  , OptionsContainer
+  // , OptionDiv  // replacing "OptionDiv" with "OptionLink as = 'div'"
+  , OptionLink
+} from './header.styles';
+
+// import { auth } from '../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
+import { signOutStart } from '../../redux/user/user.action';
 
 
-const Header = ({ currentUser, hidden }) =>
-
+const Header = ({ currentUser, hidden, signOutStart }) =>
   (
-    <div className="header">
-      <Link className='logo-container' to ='/'>
-        <Logo className='logo' />
-      </Link>
 
-      <div className='options' >
-          <Link className='option' to='/shop'>SHOP</Link>
-          {/* <Link className='option' to='/shop'>CONTACT</Link> */}
+    // <div className="header">
+    //   <Link className='logo-container' to ='/'>
+    //     <Logo className='logo' />
+    //   </Link>
+
+    //   <div className='options' >
+    //       <Link className='option' to='/shop'>SHOP</Link>
+    //       {/* <Link className='option' to='/shop'>CONTACT</Link> */}
+    //       {
+    //         currentUser ?
+    //         (<div className='option' onClick={() => { alert("Successfully Sign Out")
+    //           auth.signOut()
+    //           return window.location.reload()
+    //         }}>
+    //           SIGN OUT
+    //           </div>)
+    //         :
+    //         (<Link className='option' to='/signin'>SIGN IN</Link>)
+    //       }
+
+    //       <CartIcon />
+    //   </div>
+    //   {
+    //     hidden ? null :
+    //     <CartDropdown />
+    //   }
+    // </div>
+
+    <HeaderContainer>
+      <LogoContainer className='logo-container' to ='/'>
+        <Logo className='logo' />
+      </LogoContainer>
+
+      <OptionsContainer>
+          <OptionLink to='/shop'>
+            SHOP
+          </OptionLink>
           {
             currentUser ?
-            (<div className='option' onClick={() => { alert("Successfully Sign Out")
-              auth.signOut()
-              return window.location.reload()
-            }}>
-              SIGN OUT
-              </div>)
+            (<OptionLink as = 'div' onClick={
+                signOutStart
+              // () =>
+              // {   
+              //   alert("Successfully Sign Out")
+              //   auth.signOut()
+              //   return window.location.reload()
+              // }
+              }>
+                SIGN OUT
+             </OptionLink>
+            )
             :
-            (<Link className='option' to='/signin'>SIGN IN</Link>)
+            (<OptionLink to='/signin'>
+              SIGN IN
+             </OptionLink>
+            )
           }
-
           <CartIcon />
-      </div>
+      </OptionsContainer>
+
       {
         hidden ? null :
         <CartDropdown />
       }
-    </div>
+
+    </HeaderContainer>
   )
   
+
 
 // before selectCurrentUser AND selectCartHidden
 // const mapStateToProps = ({ user: { currentUser }, cart: { hidden }}) => ({
@@ -60,11 +110,17 @@ const Header = ({ currentUser, hidden }) =>
 //   currentUser: selectCurrentUser(state),
 //   hidden: selectCartHidden(state)
 // });
+
 // or
+
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
   hidden: selectCartHidden
 });
 
+const mapDispatchToProps = dispatch => ({
+  signOutStart: () => dispatch(signOutStart())
+});
 
-export default withRouter(connect(mapStateToProps)(Header));
+// export default withRouter(connect(mapStateToProps)(Header));
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
